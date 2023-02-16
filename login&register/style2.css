@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form {
+    position: relative;
+    background: #a54bf9;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgb(116, 119, 114);
+    border-radius: 5px;
+    padding: 60px 15px;
+    width: 450px;
+    height: 800px;
+  }
+  
+  textarea{
+    width: 400px;
+    height: 90px;
+    border-radius: 9px;
+    border: 1.5px solid rgb(109, 87, 121);
+    outline: none;
+    background: #19052c;
+  }
+
+  .form-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #0c0116;
+    height: 98%;
+    width: 98%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content {
+    width: 100%;
+    padding: 25px;
+    height: 100%;
+  }
+  
+   
+  .form-inner h2 {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 57px;
+    color: #d7a3d7;
+  }
+  
+  h4{
+    color: #d7a3d7;
+  }
+   
+  .input {
+    display: block;
+    padding: 20px 30px;
+    border: 1.5px solid rgb(109, 87, 121);
+    outline: none;
+    background: #19052c;
+    color: white;
+    width: 100%;
+    left: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+
+    input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+label {
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+  .btn {
+    margin-top: 20px;
+    width: 400px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.4s;
+    padding: 10px;
+    outline: none;
+    background: #800080;
+  }
+  
+  .btn:hover {
+    background: #c907c9;
+  }
+  
+  .form span {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+  }
+  
+  .form span:nth-child(1) {
+    background: #ffda05;
+    animation: 5s span1 infinite linear;
+    animation-delay: 1s;
+    top: 0;
+    left: -48%;
+  }
+  
+  .form span:nth-child(2) {
+    background: #00a800;
+    bottom: 0;
+    right: -48%;
+    animation: 5s span2 infinite linear;
+  }
+  
+  .form span:nth-child(3) {
+    background: #800080;
+    top: 0px;
+    animation: 5s span3 infinite linear;
+    right: -48%;
+  }
+  
+  .form span:nth-child(4) {
+    animation: 5s span4 infinite linear;
+    animation-delay: 1s;
+    background: #ff0000;
+    bottom: 0;
+    right: -48%;
+  }
+  
+  .social-icons{
+    margin: 20px auto;
+    word-spacing: 3px;
+    text-align: center;
+  }
+  .social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  @keyframes span1 {
+    0% {
+      top: -48%;
+      left: -48%;
+    }
+  
+    25% {
+      top: -48%;
+      left: 98%;
+    }
+  
+    50% {
+      top: 98%;
+      left: 98%;
+    }
+  
+    75% {
+      top: 98%;
+      left: -48%;
+    }
+  
+    100% {
+      top: -48%;
+      left: -48%;
+    }
+  }
+  
+  @keyframes span2 {
+    0% {
+      bottom: -48%;
+      right: -48%;
+    }
+  
+    25% {
+      bottom: -48%;
+      right: 98%;
+    }
+  
+    50% {
+      bottom: 98%;
+      right: 98%;
+    }
+  
+    75% {
+      bottom: 98%;
+      right: -48%;
+    }
+  
+    100% {
+      bottom: -48%;
+      right: -48%;
+    }
+  }
+  
+  @keyframes span3 {
+    0% {
+      top: -48%;
+      left: -48%;
+    }
+  
+    25% {
+      top: -48%;
+      left: 98%;
+    }
+  
+    50% {
+      top: 98%;
+      left: 98%;
+    }
+  
+    75% {
+      top: 98%;
+      left: -48%;
+    }
+  
+    100% {
+      top: -48%;
+      left: -48%;
+    }
+  }
+  
+  @keyframes span4 {
+    0% {
+      bottom: -48%;
+      right: -48%;
+    }
+  
+    25% {
+      bottom: -48%;
+      right: 98%;
+    }
+  
+    50% {
+      bottom: 98%;
+      right: 98%;
+    }
+  
+    75% {
+      bottom: 98%;
+      right: -48%;
+    }
+  
+    100% {
+      bottom: -48%;
+      right: -48%;
+    }
+  }
+  
